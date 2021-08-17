@@ -1,0 +1,11 @@
+tests: [
+    {
+        name: Verify querying by latitude and longitude matches 'coord.lat' and 'coord.lon' attributes in response
+        api_endpoint: "/data/2.5/weather?lat=40.5247&lon=-111.8638"
+        method: GET
+        response: {
+            "coord.lat": "40.5247",
+            "coord.lon": "-111.8638"
+        }
+    }
+]

@@ -1,0 +1,7 @@
+version: "2"
+services:
+  apigoldfile:
+    build: .
+    environment:
+      - HOST_URL=${HOST_URL}
+      - API_KEY=${API_KEY}

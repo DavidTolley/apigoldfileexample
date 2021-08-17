@@ -1,0 +1,10 @@
+tests: [
+    {
+        name: Verify querying by Zip Code matches 'name' attribute in response
+        api_endpoint: "/data/2.5/weather?zip=84020,us"
+        method: GET
+        response: {
+            name: "Draper"
+        }
+    }
+]
